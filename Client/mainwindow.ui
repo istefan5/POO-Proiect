@@ -6,102 +6,124 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>519</width>
-    <height>509</height>
+    <width>520</width>
+    <height>501</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>220</y>
+      <width>96</width>
+      <height>67</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_Login">
+       <property name="maximumSize">
+        <size>
+         <width>94</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Autentificare</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Register">
+       <property name="text">
+        <string>Inregistrare</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>170</y>
-      <width>40</width>
-      <height>20</height>
+      <y>130</y>
+      <width>203</width>
+      <height>28</height>
      </rect>
     </property>
-    <property name="maximumSize">
-     <size>
-      <width>40</width>
-      <height>20</height>
-     </size>
-    </property>
-    <property name="text">
-     <string>Nume</string>
-    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="maximumSize">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Nume</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_username">
+       <property name="maximumSize">
+        <size>
+         <width>154</width>
+         <height>26</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>200</y>
-      <width>41</width>
-      <height>20</height>
+      <y>160</y>
+      <width>204</width>
+      <height>28</height>
      </rect>
     </property>
-    <property name="maximumSize">
-     <size>
-      <width>41</width>
-      <height>20</height>
-     </size>
-    </property>
-    <property name="text">
-     <string>Parolă</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_Login">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>230</y>
-      <width>94</width>
-      <height>29</height>
-     </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>94</width>
-      <height>29</height>
-     </size>
-    </property>
-    <property name="text">
-     <string>Autentificare</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_password">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>200</y>
-      <width>154</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>154</width>
-      <height>26</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_username">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>170</y>
-      <width>154</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>154</width>
-      <height>26</height>
-     </size>
-    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="maximumSize">
+        <size>
+         <width>41</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Parolă</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_password">
+       <property name="maximumSize">
+        <size>
+         <width>154</width>
+         <height>26</height>
+        </size>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -109,7 +131,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>519</width>
+     <width>520</width>
      <height>26</height>
     </rect>
    </property>

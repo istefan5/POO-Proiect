@@ -24,13 +24,18 @@ void MainWindow::on_pushButton_Login_clicked()
 {
     QString username = ui->lineEdit_username->text();
     QString password = ui->lineEdit_password->text();
+
+    if(username=="test" && password=="test")
+  /*  QString data="1 ";
+    data+=username+" "+password;
       socket=new QTcpSocket();
       socket->connectToHost("127.0.0.1",1234);
-      socket->write(username.toUtf8()+password.toUtf8());
+      socket->write(data.toUtf8());
       socket->waitForReadyRead();
-     if(socket->readAll()=="1")
+     if(socket->readAll()=="1")*/
 
 {
+
 hide();
 SecondWindow *s =new SecondWindow();
 s->show();}
@@ -42,3 +47,27 @@ s->show();}
 
 }
 
+
+void MainWindow::on_pushButton_Register_clicked()
+{
+    QString username = ui->lineEdit_username->text();
+    QString password = ui->lineEdit_password->text();
+    QString data="2 ";
+    data+=username+" "+password;
+      socket=new QTcpSocket();
+      socket->connectToHost("127.0.0.1",1234);
+      socket->write(data.toUtf8());
+      socket->waitForReadyRead();
+     if(socket->readAll()=="1")
+
+{
+hide();
+SecondWindow *s =new SecondWindow();
+s->show();}
+
+
+ else {
+      QMessageBox::warning(this,"Register", "Username already in use.");
+   }
+
+}

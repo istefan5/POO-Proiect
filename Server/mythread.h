@@ -1,6 +1,6 @@
 #ifndef MYTHREAD_H
 #define MYTHREAD_H
-
+#include <QtSql>
 #include <QThread>
 #include <QTcpSocket>
 #include <QDebug>
@@ -10,11 +10,15 @@ class MyThread : public QThread
 {
     Q_OBJECT
 public:
+
+    QSqlDatabase  db;
    explicit MyThread(qintptr ID,QObject *parent =nullptr):QThread(parent)
     {
-         this->socketDescriptor = ID;
-    }
+        this->socketDescriptor = ID;
 
+    }
+    void logIn(QString user,QString pas);
+    void Register(QString user,QString pas);
     void run();
 
 signals:
@@ -27,6 +31,7 @@ public slots:
 public slots:
 
 private:
+
     QTcpSocket *socket;
     qintptr socketDescriptor;
 };
