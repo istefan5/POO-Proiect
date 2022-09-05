@@ -6,10 +6,12 @@
 #include <QDebug>
 #include <QObject>
 
+
 class MyThread : public QThread
 {
     Q_OBJECT
 public:
+
 
     QSqlDatabase  db;
    explicit MyThread(qintptr ID,QObject *parent =nullptr):QThread(parent)
@@ -17,12 +19,39 @@ public:
         this->socketDescriptor = ID;
 
     }
+
     void logIn(QString user,QString pas);
-    void Register(QString user,QString pas);
+
+    void Register(QString user,QString pas,QString email);
+
+    void ShowMusicEvents();
+
+    void ShowCulturalEvents();
+
+    void ShowSportEvents();
+
+    void ShowEventDetails(QString Event);
+
+    void ShowFavouriteEvents(QString user);
+
+    void MarkAsFavourite(QString user,QString eveniment);
+
+    void BuyTicket(QString user,QString eveniment);
+
+    void ShowEventsTickets(QString user);
+
+    void UnMarkAsfavourite(QString user,QString eveniment);
+
+    void ShowNotifications(QString user);
+
+    void ShowEventsStats();
+
+    void ForgotPassword(QString user,QString email);
+
     void run();
 
 signals:
-    //void error(QTcpSocket::SocketError socketerror);
+
 
 public slots:
     void readyRead();
@@ -36,4 +65,4 @@ private:
     qintptr socketDescriptor;
 };
 
-#endif // MYTHREAD_H
+#endif

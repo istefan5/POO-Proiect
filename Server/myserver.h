@@ -9,8 +9,8 @@ class MyServer : public QTcpServer
 {
     Q_OBJECT
 public:
-    QSqlDatabase db;
-    explicit MyServer(QObject *parent =0);
+    static MyServer &getInstance();
+    static void destroyInstance();
     void StartServer();
 signals:
 
@@ -19,7 +19,9 @@ public slots:
 
 protected:
     void incomingConnection(qintptr socketDescriptor);
-
+private:
+    static MyServer *Sinst;
+    explicit MyServer(QObject *parent =0);
+    ~MyServer() {};
 };
-
-#endif // MYSERVER_H
+#endif

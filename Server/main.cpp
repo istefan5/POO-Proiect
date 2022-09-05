@@ -7,7 +7,8 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    MyServer Server;
+
+    MyServer &Server=MyServer::getInstance();
     Server.StartServer();
 
 

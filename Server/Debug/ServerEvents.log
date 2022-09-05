@@ -1,0 +1,19 @@
+﻿  Factory_protocol.cpp
+E:\POO-PROIECT\ServerFinal\Server\Protocol.h(2,10): fatal error C1083: Cannot open include file: 'QObject': No such file or directory
+  log.cpp
+E:\POO-PROIECT\ServerFinal\Server\log.cpp(1,10): fatal error C1083: Cannot open include file: 'log.h': No such file or directory
+  main.cpp
+E:\POO-PROIECT\ServerFinal\Server\main.cpp(1,10): fatal error C1083: Cannot open include file: 'QtCore/QCoreApplication': No such file or directory
+  message_fac.cpp
+E:\POO-PROIECT\ServerFinal\Server\message.h(3,10): fatal error C1083: Cannot open include file: 'QObject': No such file or directory
+  myserver.cpp
+E:\POO-PROIECT\ServerFinal\Server\myserver.h(3,10): fatal error C1083: Cannot open include file: 'QtSql': No such file or directory
+  mythread.cpp
+E:\POO-PROIECT\ServerFinal\Server\mythread.h(3,10): fatal error C1083: Cannot open include file: 'QtSql': No such file or directory
+  Protocol.cpp
+E:\POO-PROIECT\ServerFinal\Server\Protocol.h(2,10): fatal error C1083: Cannot open include file: 'QObject': No such file or directory
+  protocol_login.cpp
+E:\POO-PROIECT\ServerFinal\Server\Protocol.h(2,10): fatal error C1083: Cannot open include file: 'QObject': No such file or directory
+  protocol_register.cpp
+E:\POO-PROIECT\ServerFinal\Server\Protocol.h(2,10): fatal error C1083: Cannot open include file: 'QObject': No such file or directory
+  Generating Code...
